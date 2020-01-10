@@ -57,7 +57,7 @@ li {
     box-shadow: 5px 5px 3px rgba(238, 238, 238, 0.15);
 }
 
-.projects > .projectCard, .skills > li, .contact > li {
+.projects .projectCard, .skills > li, .contact > li {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,6 +66,41 @@ li {
     margin: 50px;
     background-color: #00adb5;
     border-radius: 30px;
+}
+
+.projects {
+    justify-content: center;
+}
+
+.projects > a {
+    margin: 50px;
+}
+
+.projects > a > .projectCard {
+    margin: 0;
+}
+
+.projects > .projectCard > h3 {
+    text-decoration: none;
+}
+
+.projects > h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.pictureFrame {
+    height: 100px;
+    width: 100px;
+}
+
+.projectCard {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    height: 100%;
 }
 
 .projects, .contact {
