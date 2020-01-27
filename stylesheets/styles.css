@@ -40,24 +40,28 @@ li {
     margin: 0 auto 0 0;
 }
 
+#landing, #aboutme, #projects, #skills {
+    display: flex;
+    flex-wrap: wrap;
+}
 .aboutme {
     text-align: center;
+}
+
+#landing {
+    flex-direction: column;
 }
 
 .aboutme p {
     padding: 20px;
 }
 
-.projects, .skills, .contact {
-    display: flex;
-    flex-wrap: wrap;
-}
 
 .projectCard:hover, .skills > li:hover, .contact > li:hover {
     box-shadow: 5px 5px 3px rgba(238, 238, 238, 0.15);
 }
 
-.projects .projectCard, .skills > li, .contact > li {
+#projects .projectCard, #skills > li {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -68,23 +72,23 @@ li {
     border-radius: 30px;
 }
 
-.projects {
+#projects {
     justify-content: center;
 }
 
-.projects > a {
+#projects > a {
     margin: 50px;
 }
 
-.projects > a > .projectCard {
+#projects > a > .projectCard {
     margin: 0;
 }
 
-.projects > .projectCard > h3 {
+#projects > .projectCard > h3 {
     text-decoration: none;
 }
 
-.projects > h2 {
+#projects > h2 {
     width: 100%;
     text-align: center;
 }
@@ -135,7 +139,7 @@ img {
     margin: 20px;
 }
 
-.aboutme, .projects, .skills, .contacts {
+#landing, #aboutme, #projects, #skills {
     height: 100vh;
     width: 100vw;
 }
