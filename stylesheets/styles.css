@@ -139,3 +139,38 @@ img {
     height: 100vh;
     width: 100vw;
 }
+
+.toolTip {
+    position: relative;
+    display: inline-block;
+}
+
+.toolTip .toolTipText {
+    font-size: 2vw;
+    visibility: hidden;
+    width: 80px;
+    background-color: #00adb5;
+    text-align: center;
+    border-radius: 3px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -40px;
+    margin-bottom: 10px;
+    position: absolute;
+    z-index: 1;
+}
+
+.toolTip:hover .toolTipText {
+    visibility: visible;
+}
+
+.toolTip .toolTipText::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #00adb5 transparent transparent transparent;
+}
