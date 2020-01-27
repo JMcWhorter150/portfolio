@@ -134,3 +134,8 @@ img {
 .skillsList > li {
     margin: 20px;
 }
+
+.aboutme, .projects, .skills, .contacts {
+    height: 100vh;
+    width: 100vw;
+}
