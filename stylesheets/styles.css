@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     color:#EEEEEE;
+    text-decoration: none;
 }
 
 html, body {
@@ -9,8 +10,8 @@ html, body {
 
 nav {
     background-color: #393e46;
-    display: flex;
-    justify-content: space-between;
+    display: none;
+    justify-content: flex-end;
     align-items: center;
     list-style: none;
     height: 50px;
@@ -29,27 +30,68 @@ nav ul {
 }
 
 .logo li:hover, .links li:hover {
-    background-color: #00adb5;
+    background-color: rgba(238, 238, 238, 0.15);
 }
 
 li {
     list-style: none;
 }
 
-#logo {
-    margin: 0 auto 0 0;
-}
 
 #landing, #aboutme, #projects, #skills {
     display: flex;
     flex-wrap: wrap;
 }
-.aboutme {
-    text-align: center;
-}
 
 #landing {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#landing > h1, #landing > p {
+    margin: 0;
+    text-align: center;
+}
+
+#aboutme {
+    text-align: center;
+    display: flex;
+}
+
+#aboutMeText {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#personal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#personal > h2, #personal > p {
+    width: 50%;
+    height: 50%;
+}
+
+#personalPictureFrame {
+    width: 50vw;
+}
+
+#contact {
+    display: flex;
+}
+
+#contact > h3 {
+    width: 50%;
+    height: 50%;
+}
+
+#personalPictureFrame > img {
+    width: 100%;
 }
 
 .aboutme p {
@@ -61,23 +103,41 @@ li {
     box-shadow: 5px 5px 3px rgba(238, 238, 238, 0.15);
 }
 
-#projects .projectCard, #skills > li {
+
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#projects > h4 {
+    align-self: flex-start;
+    justify-self: flex-start;
+    text-align: center;
+    width: 100%;
+    font-size: 5vh;
+}
+
+#projectButtons {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 200px;
-    width: 200px;
-    margin: 50px;
-    background-color: #00adb5;
-    border-radius: 30px;
 }
 
-#projects {
+#projects .projectCard {
+    display: flex;
+    align-items: center;
     justify-content: center;
+    height: 50vh;
+    width: 30vw;
+    margin: 5px;
+    background-color: #00adb5;
+    border-radius: 3px;
 }
 
 #projects > a {
-    margin: 50px;
+    margin: 5px;
 }
 
 #projects > a > .projectCard {

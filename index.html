@@ -12,14 +12,11 @@
 </head>
 <body>
     <nav>
-        <ul class="logo">
-            <li>Logo</li>
-        </ul>
         <ul class="links">
+            <li>Joseph McWhorter</li>
             <li>About Me</li>
             <li>Projects</li>
             <li>Skills</li>
-            <li>Contact</li>
         </ul>
     </nav>
     <section id="landing">
@@ -31,37 +28,50 @@
             <a href="">LinkedIn</a> |
             <a href="">Contact</a>
         </p>
-        <img src="" alt="Software Developer Image">
     </section>
     <section id="aboutme">
-        <h2>About me</h2>
-        <p>Hi, I'm Joseph McWhorter. I'm a full-stack software developer looking for new learning opportunities and ways to improve my existing skills. Prior to becoming a developer, I managed a lab for a biotech company and hiked the Appalachian Trail. After I got back, I joined DigitalCrafts and have been coding ever since.</p>
-        <p>City: Atlanta, GA</p>
-        <p>Email: Joseph.S.McWhorter@gmail.com</p>
-        <p>Phone: (706)859-8025</p>
+        <div id="personalPictureFrame">
+            <img src="/images/Me.jpg" alt="Software Developer Image">
+        </div>
+        <div id="aboutMeText">
+            <div id="personal">
+                <h2>About me</h2>
+                <p>Hi, I'm Joseph McWhorter. I'm a full-stack software developer looking for new learning opportunities and ways to improve my existing skills. Prior to becoming a developer, I managed a lab for a biotech company and hiked the Appalachian Trail. After I got back, I joined DigitalCrafts and have been coding ever since.</p>
+            </div>
+            <div id="contact">
+                <h3>Contact</h3>
+                <ul>
+                    <li>City: Atlanta, GA</li>
+                    <li>Email: Joseph.S.McWhorter@gmail.com</li>
+                    <li>Phone: (706)859-8025</li>
+                </ul>
+            </div>
+        </div>
     </section>
     <section id="projects">
-        <h2>Projects</h2>
-        <a href="https://rainyparade.surge.sh" target="_blank">
-            <div class="projectCard">
-                <h3>Front-end</h3>
+        <h4>Projects</h4>
+        <div id="projectButtons">
+            <a href="https://rainyparade.surge.sh" target="_blank">
+                <div class="projectCard">
+                    <h5>Is It Raining On Your Parade?</h5>
                     <div class="pictureFrame">
                         <img src="/images/umbrella.png" alt="Umbrella Icon">
                         <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
                     </div>
-            </div>
-        </a>
-        <a href="https://jeopardy.bentleyherron.dev" target="_blank">
-            <div class="projectCard">
-                <h3>Back-end</h3>
+                </div>
+            </a>
+            <a href="https://jeopardy.bentleyherron.dev" target="_blank">
+                <div class="projectCard">
+                    <h5>Jeopardy</h5>
                     <div class="pictureFrame">
                         <img src="/images/question.png" alt="Question Icon">
                         <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
                     </div>
-            </div>
-        </a>
-        <div class="projectCard">React</div>
-        <div class="projectCard">Capstone</div>
+                </div>
+            </a>
+            <!-- <div class="projectCard">React</div>
+            <div class="projectCard">Capstone</div> -->
+        </div>
     </section>
     <section id="skills">
         <div class="skillsTitle">
